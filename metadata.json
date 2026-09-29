@@ -1,0 +1,6 @@
+{
+  "name": "Digital Material Flow & Line Feeding System",
+  "description": "Real-time material flow planning, line feeding management, predictive inventory tracking, trip scheduling, and SWCT analytics for two-wheeler assembly plants.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,26 @@
+.gooey-particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color, #38bdf8);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: particle-burst var(--time, 500ms) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes particle-burst {
+  0% {
+    transform: translate(calc(-50% + var(--start-x)), calc(-50% + var(--start-y))) scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(calc(-50% + var(--end-x) * 1.1), calc(-50% + var(--end-y) * 1.1)) scale(var(--scale, 1));
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate(calc(-50% + var(--end-x)), calc(-50% + var(--end-y))) scale(0);
+    opacity: 0;
+  }
+}
+
